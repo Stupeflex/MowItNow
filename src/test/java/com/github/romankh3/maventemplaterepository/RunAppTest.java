@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
- * Unit-level testing for {@link MavenTemplateRepository} object.
+ * Unit-level testing for {@link RunApp} object.
  */
 public class MavenTemplateRepositoryTest {
 
     @Test
     public void shouldCreateJavaRepositoryTemplateMain() {
-        MavenTemplateRepository main = new MavenTemplateRepository();
+        RunApp main = new RunApp();
         Assertions.assertNotNull(main);
     }
 
