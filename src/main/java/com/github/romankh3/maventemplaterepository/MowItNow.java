@@ -114,4 +114,31 @@ public final class MowItNow {
             throw new IOException("Erreur dans le fichier d'entree - " + e.getMessage());
         }
     }
+
+    /**
+     * Obtient la listes des tondeuses gérées par l'instance de la classe et initialisées par le fichier de configuration
+     * 
+     * @return La liste des {@link Tondeuse} gérées par l'instance de la classe {@code MowItNow} et initialisées par le fichier de configuration
+     */
+    public List<Tondeuse> getTondeuses(){
+        return this.tondeuses;
+    }
+
+    /**
+     * Obtient la position X du coin droit supérieur de la pelouse.
+     *
+     * @return La position X du coin droit supérieur de la pelouse.
+     */
+    public int getLimiteX(){
+        return this.limiteX;
+    }
+
+    /**
+     * Obtient la position Y du coin droit supérieur de la pelouse.
+     *
+     * @return La position Y du coin droit supérieur de la pelouse.
+     */
+    public int getLimiteY(){
+        return this.limiteY;
+    }
 }
